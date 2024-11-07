@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Twitter</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; }
+        .post-container { border-bottom: 1px solid #ddd; padding: 10px; }
+        .like-dislike { cursor: pointer; margin-right: 10px; }
+        #login-status { margin-bottom: 20px; }
+    </style>
+</head>
+<body>
+    <h1>Mini X</h1>
+    <div id="login-status">
+        <button onclick="connectWallet()">Se connecter au Wallet</button>
+        <button onclick="disconnectWallet()">Déconnecter</button>
+        <p id="current-user">Utilisateur non connecté</p>
+    </div>
+    <div>
+        <input type="text" id="new-post" placeholder="Nouveau post" style="width: 80%;">
+        <button onclick="publishPost()">Ajouter un post</button>
+    </div>
+    <div id="posts"></div>
+</body>
+<script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.3.0/dist/web3.min.js"></script>
+<script src="app.js"></script>
+</html>

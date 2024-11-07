@@ -25,3 +25,6 @@ This project is a decentralized mini Twitter application built with Solidity, We
 - **Modify a Post and Show the Date of Modification**  
   Only the post owner can modify it. If a post is modified, the date of modification is displayed.
 
+## Screenshot
+
+![Mini Twitter App Screenshot](https://github.com/abd-ibn/Twitter-DAPP-/blob/main/screenshot.png)
